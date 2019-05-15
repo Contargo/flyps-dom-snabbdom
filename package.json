@@ -1,0 +1,52 @@
+{
+  "name": "flyps-dom-snabbdom",
+  "version": "0.0.1",
+  "description": "A package that brings snabbdom to flyps.",
+  "browser": "dist/flyps-dom-snabbdom.umd.js",
+  "main": "dist/flyps-dom-snabbdom.cjs.js",
+  "module": "dist/flyps-dom-snabbdom.esm.js",
+  "scripts": {
+    "build": "rollup -c",
+    "format": "prettier --write 'src/**/*.js'",
+    "lint": "eslint src",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm test && npm run lint",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Contargo/flyps-dom-snabbdom.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Contargo/flyps-dom-snabbdom/issues"
+  },
+  "homepage": "https://github.com/Contargo/flyps-dom-snabbdom#README",
+  "dependencies": {
+    "flyps": "^0.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "babel-loader": "^8.0.5",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.2.0",
+    "eslint-plugin-jest": "^22.5.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "jest": "^24.8.0",
+    "prettier": "^1.17.0",
+    "rollup": "^1.12.4",
+    "rollup-plugin-babel": "^4.3.2"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/**/*.test.js"
+    ],
+    "coverageDirectory": "<rootDir>/coverage",
+    "roots": [
+      "<rootDir>/src"
+    ]
+  }
+}
