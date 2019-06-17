@@ -1,7 +1,7 @@
 {
   "name": "flyps-dom-snabbdom",
   "version": "0.1.0",
-  "description": "A package that brings snabbdom to flyps.",
+  "description": "A package that brings Snabbdom to Flyps.",
   "browser": "dist/flyps-dom-snabbdom.umd.js",
   "main": "dist/flyps-dom-snabbdom.cjs.js",
   "module": "dist/flyps-dom-snabbdom.esm.js",
