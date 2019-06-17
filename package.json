@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/Contargo/flyps-dom-snabbdom#README",
   "dependencies": {
-    "flyps": "^0.3.0",
+    "flyps": "^0.4.0",
     "snabbdom": "^0.7.3"
   },
   "devDependencies": {
@@ -36,8 +36,8 @@
     "eslint-plugin-jest": "^22.5.1",
     "eslint-plugin-prettier": "^3.0.1",
     "jest": "^24.8.0",
-    "prettier": "^1.17.0",
-    "rollup": "^1.12.4",
+    "prettier": "^1.18.2",
+    "rollup": "^1.15.6",
     "rollup-plugin-babel": "^4.3.2"
   },
   "jest": {
