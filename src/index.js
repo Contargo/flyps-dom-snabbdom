@@ -8,10 +8,10 @@ import style from "snabbdom/modules/style";
 
 export { h } from "snabbdom/h";
 
-let snabbdom = init([attrs, cls, events, style]);
+let snabbdomPatch = init([attrs, cls, events, style]);
 
 function patch(prevNode, nextNode) {
-  return snabbdom(prevNode, nextNode);
+  return snabbdomPatch(prevNode, nextNode);
 }
 
 function cleanup(prevNode) {
