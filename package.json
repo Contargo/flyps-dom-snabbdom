@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/Contargo/flyps-dom-snabbdom#README",
   "dependencies": {
-    "flyps": "^0.5.0",
+    "flyps": ">=0.3.0",
     "snabbdom": "^0.7.3"
   },
   "devDependencies": {
