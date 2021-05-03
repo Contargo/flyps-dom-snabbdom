@@ -1,14 +1,21 @@
 import { mount as defaultMount } from "flyps";
 
-import { init } from "snabbdom";
-import attrs from "snabbdom/modules/attributes";
-import cls from "snabbdom/modules/class";
-import events from "snabbdom/modules/eventlisteners";
-import style from "snabbdom/modules/style";
+import {
+  init,
+  attributesModule,
+  classModule,
+  eventListenersModule,
+  styleModule,
+} from "snabbdom";
 
-export { h } from "snabbdom/h";
+export { h } from "snabbdom";
 
-let snabbdomPatch = init([attrs, cls, events, style]);
+let snabbdomPatch = init([
+  attributesModule,
+  classModule,
+  eventListenersModule,
+  styleModule,
+]);
 
 function patch(prevNode, nextNode) {
   return snabbdomPatch(prevNode, nextNode);
