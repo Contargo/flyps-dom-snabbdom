@@ -15,7 +15,11 @@ let snabbdomPatch = init([
   classModule,
   eventListenersModule,
   styleModule,
-]);
+], undefined, {
+  experimental: {
+    fragments: true,
+  },
+});
 
 function patch(prevNode, nextNode) {
   return snabbdomPatch(prevNode, nextNode);
