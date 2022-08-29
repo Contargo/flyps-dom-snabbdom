@@ -10,16 +10,13 @@ import {
 
 export { h, jsx } from "snabbdom";
 
-let snabbdomPatch = init([
-  attributesModule,
-  classModule,
-  eventListenersModule,
-  styleModule,
-], undefined, {
-  experimental: {
-    fragments: true,
+let snabbdomPatch = init(
+  [attributesModule, classModule, eventListenersModule, styleModule],
+  undefined,
+  {
+    experimental: { fragments: true },
   },
-});
+);
 
 function patch(prevNode, nextNode) {
   return snabbdomPatch(prevNode, nextNode);
