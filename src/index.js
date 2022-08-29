@@ -8,7 +8,7 @@ import {
   styleModule,
 } from "snabbdom";
 
-export { h, jsx } from "snabbdom";
+export { fragment, h, jsx } from "snabbdom";
 
 let snabbdomPatch = init(
   [attributesModule, classModule, eventListenersModule, styleModule],
